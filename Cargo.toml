@@ -1,0 +1,16 @@
+[package]
+name = "rust-exif"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4.26"
+# custom ffprobe to include apple_creation_date
+ffprobe = { path = "./ffprobe-rs" }
+kamadak-exif = "0.5.5"
+
+[[bin]]
+name = "rust-exif"
+path = "main.rs"
